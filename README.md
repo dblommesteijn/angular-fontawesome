@@ -8,14 +8,19 @@ A simple directive for [FontAwesome](http://fontawesome.io/) icons. Avoid writin
 
 ### Usage
 
-1. Include the FontAwesome CSS and fonts in your application by [following their instructions](http://fortawesome.github.io/Font-Awesome/get-started/).
+1. Add `angular-fontawesome` to your `bower.json` project file as dependency.
+    ```json
+    "angular-fontawesome": "~1.0.0"
+    ```
 
-2. Include the angular-fontawesome module in your Angular app.
+2. Include the FontAwesome CSS and fonts in your application by [following their instructions](http://fortawesome.github.io/Font-Awesome/get-started/).
+
+3. Include the angular-fontawesome module in your Angular app.
     ```javascript
     angular.module('myApp', ['picardy.fontawesome'])
     ```
 
-3. Use the directive on any page which bootstraps your app.
+4. Use the directive on any page which bootstraps your app.
     ```html
     <fa name="spinner" spin ng-style="{'color': checkColor}"></fa>
     <!-- $scope.checkColor = 'blue' -->
